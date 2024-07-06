@@ -16,20 +16,33 @@ struct FirstVCUsingRouter: View {
     var body: some View {
         ZStack {
             Color(.red)
-            LazyVStack(spacing: 20) {
-                ForEach(dataList, id: \.self) { data in
-                    Button(action: {
-                        router.navigateTo(.NestedVc(dataForView: data))
-                    }, label: {
-                        Text(data)
-                            .bold()
-                            .padding(.vertical)
-                            .padding(.horizontal, 50)
-                            .foregroundStyle(.white)
-                            .background(.green)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
-                    })
+            VStack(spacing: 30){
+                LazyVStack(spacing: 20) {
+                    ForEach(dataList, id: \.self) { data in
+                        Button(action: {
+                            router.navigateTo(.NestedVc(dataForView: data))
+                        }, label: {
+                            Text(data)
+                                .bold()
+                                .padding(.vertical)
+                                .padding(.horizontal, 50)
+                                .foregroundStyle(.white)
+                                .background(.green)
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                        })
+                    }
                 }
+                Button(action: {
+                    router.navigateBack()
+                }, label: {
+                    Text("Extra Back Button")
+                        .bold()
+                        .padding(.vertical)
+                        .padding(.horizontal, 50)
+                        .foregroundStyle(.white)
+                        .background(.green)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                })
             }
         }
         .ignoresSafeArea()
