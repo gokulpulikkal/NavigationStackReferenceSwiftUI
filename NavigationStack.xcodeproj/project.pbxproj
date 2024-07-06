@@ -15,6 +15,10 @@
 		4B79DD1D2C38879F00B62F9C /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD1C2C38879F00B62F9C /* SecondVC.swift */; };
 		4B79DD1F2C3887B900B62F9C /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD1E2C3887B900B62F9C /* ThirdVC.swift */; };
 		4B79DD212C3891E900B62F9C /* NestedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD202C3891E900B62F9C /* NestedVC.swift */; };
+		4B79DD242C38D6DF00B62F9C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD232C38D6DF00B62F9C /* Router.swift */; };
+		4B79DD262C38D78400B62F9C /* DestinationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD252C38D78400B62F9C /* DestinationViews.swift */; };
+		4B79DD282C38D88D00B62F9C /* MainVCUsingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD272C38D88D00B62F9C /* MainVCUsingRouter.swift */; };
+		4B79DD2B2C38DAEE00B62F9C /* FirstVCUsingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD2A2C38DAEE00B62F9C /* FirstVCUsingRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		4B79DD1C2C38879F00B62F9C /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		4B79DD1E2C3887B900B62F9C /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		4B79DD202C3891E900B62F9C /* NestedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedVC.swift; sourceTree = "<group>"; };
+		4B79DD232C38D6DF00B62F9C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4B79DD252C38D78400B62F9C /* DestinationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViews.swift; sourceTree = "<group>"; };
+		4B79DD272C38D88D00B62F9C /* MainVCUsingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCUsingRouter.swift; sourceTree = "<group>"; };
+		4B79DD2A2C38DAEE00B62F9C /* FirstVCUsingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVCUsingRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,8 @@
 		4B79DD0A2C3886F200B62F9C /* NavigationStack */ = {
 			isa = PBXGroup;
 			children = (
+				4B79DD292C38D91000B62F9C /* ViewsUsingRouters */,
+				4B79DD222C38D6CC00B62F9C /* ViewRouter */,
 				4B79DD1A2C38873B00B62F9C /* FirstVC.swift */,
 				4B79DD202C3891E900B62F9C /* NestedVC.swift */,
 				4B79DD1C2C38879F00B62F9C /* SecondVC.swift */,
@@ -79,6 +89,24 @@
 				4B79DD132C3886F400B62F9C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B79DD222C38D6CC00B62F9C /* ViewRouter */ = {
+			isa = PBXGroup;
+			children = (
+				4B79DD232C38D6DF00B62F9C /* Router.swift */,
+				4B79DD252C38D78400B62F9C /* DestinationViews.swift */,
+			);
+			path = ViewRouter;
+			sourceTree = "<group>";
+		};
+		4B79DD292C38D91000B62F9C /* ViewsUsingRouters */ = {
+			isa = PBXGroup;
+			children = (
+				4B79DD272C38D88D00B62F9C /* MainVCUsingRouter.swift */,
+				4B79DD2A2C38DAEE00B62F9C /* FirstVCUsingRouter.swift */,
+			);
+			path = ViewsUsingRouters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +180,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B79DD0E2C3886F200B62F9C /* MainVC.swift in Sources */,
+				4B79DD282C38D88D00B62F9C /* MainVCUsingRouter.swift in Sources */,
+				4B79DD262C38D78400B62F9C /* DestinationViews.swift in Sources */,
 				4B79DD212C3891E900B62F9C /* NestedVC.swift in Sources */,
 				4B79DD1D2C38879F00B62F9C /* SecondVC.swift in Sources */,
+				4B79DD2B2C38DAEE00B62F9C /* FirstVCUsingRouter.swift in Sources */,
+				4B79DD242C38D6DF00B62F9C /* Router.swift in Sources */,
 				4B79DD1B2C38873B00B62F9C /* FirstVC.swift in Sources */,
 				4B79DD1F2C3887B900B62F9C /* ThirdVC.swift in Sources */,
 				4B79DD0C2C3886F200B62F9C /* NavigationStackApp.swift in Sources */,
