@@ -12,7 +12,9 @@ struct ThirdVC: View {
         ZStack {
             Color(.yellow)
             Text("Hello, World!")
-        }.ignoresSafeArea()
+        }
+        .ignoresSafeArea()
+        .navigationTitle("This the ThirdVC")
     }
 }
 
